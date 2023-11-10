@@ -24,12 +24,13 @@ public class Snack5 {
 			Scanner in = new Scanner(System.in);
 			System.out.print("Digita parola: ");
 			String word = in.nextLine();
-		
+			
 			//Se è stato digitato 0 allora arresto il programma
 			if (word.equals("0")) {
 				
 				System.out.println("Programma terminato");				
 				abort = true;
+				in.close();
 				break;
 			}
 			
@@ -56,6 +57,8 @@ public class Snack5 {
 				}
 				
 			}
+			
+			
 			
 			System.out.println("Lettere contenute N: " + chAlfanumeric);
 			System.out.println("Numeri contenuti N: " + chNumeric);
